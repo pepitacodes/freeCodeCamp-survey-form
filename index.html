@@ -6,13 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>Survey Form</title>
 </head>
 <body>
     <header>
         <h1 id="title">Survey Form</h1>
-        <p id="description" class="description">Please answer the following survey and we will contact you soon.<br>Thank you!</p>
+        <p id="description" class="subtitle">Please answer the following survey and we will contact you soon. Thank you!</p>
     </header>
     <form id="survey-form">
             <label id="name-label" for="name">Name:</label>
@@ -20,26 +20,19 @@
             <label id="email-label" for="email">Email:</label>
             <input id="email" class="form-control" type="email" name="email" placeholder="Your email" required>
             <label id="number-label" for="number">Number:</label>
-            <input id="number" class="form-control" type="number" name="number" min="10" max="20" placeholder="Phone number" required>
-
-        <div class="language-section">
-            <p>Which is your favorite programming language?</p>
-            
-            <label for="java"><input type="radio" id="html" name="fav_language" value="Java">Java</label><br>
-            <input type="radio" id="python" name="fav_language" value="Python">
-            <label for="python">Python</label><br>
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript" checked>
-            <label for="javascript">JavaScript</label><br>
-            <input type="radio" id="go" name="fav_language" value="Go">
-            <label for="go">Go</label><br>
-            <input type="radio" id="c-sharp" name="fav_language" value="c-sharp">
-            <label for="c-sharp">C#</label><br>
-            <input type="radio" id="ruby" name="fav_language" value="ruby">
-            <label for="ruby">Ruby</label>
+            <input id="number" class="form-control" type="number" name="number" min="5" max="20" placeholder="Phone number" required>
+        <div class="job-section">
+            <p>Are you currently working in the IT industry?</p>
+            <input type="radio" id="yes" name="job-situation" value="Yes" checked>
+            <label id="yes-label" for="yes">Yes</label><br>
+            <input type="radio" id="no" name="job-situation" value="No">
+            <label id="no-label" for="no">No</label><br>
+            <input type="radio" id="occasionally" name="job-situation" value="Occasionally">
+            <label id="occasionally-label " for="occasionally">Occasionally</label><br>
             <br>
         </div>    
-        <div>
-            <p class="current-role-text" style="text-align: center;">What is your current role in Technology?</p>
+        <div class="role-section">
+            <p class="current-role-text">What is your current role in Technology?</p>
             <select class="form-control" name="dropdown" id="dropdown" placeholder="Select current role">
                 <option disable selected value>Select your current role</option>
                 <option>QA</option>
@@ -49,21 +42,25 @@
                 <option>Game Developer</option>
             </select>  
         </div>
-
-        <div>
-        <label>Project 1</label>
-        <input type="checkbox" value="one">    
-        <label>Project 2</label>
-        <input type="checkbox" value="two">   
-        <label>Project 3</label> 
-        <input type="checkbox" value="three">    
+        <div class="language-section">
+            <p>Which programming languages have you learned?</p>
+        <input type="checkbox" value="java" id="java" name="java">  
+        <label for="java">Java</label><br>
+        <input type="checkbox" value="c-sharp" id="c-sharp" name="c-sharp">   
+        <label for="c-sharp">C#</label><br>
+        <input type="checkbox" value="javascript" id="javascript" name="javascript">   
+        <label for="javascript">Javascript</label><br>  
+        <input type="checkbox" value="go" id="go" name="go">  
+        <label for="go">Go</label><br>
+        <input type="checkbox" value="ruby" id="ruby" name="ruby">   
+        <label for="ruby">Ruby</label><br>
+        <input type="checkbox" value="python" id="python" name="python">
+        <label for="python">Python</label><br> 
         </div>
-        <div class="textarea-container">
+        <div class="textarea-sectionr">
             <p>Any adittional comments</p>
-            <textarea id="comments" name="comment" rows="4" cols="100" placeholder="Enter your comment here..."></textarea>
+            <textarea id="comments" name="comment" rows="6" cols="100" placeholder="Enter your comment here..."></textarea>
         </div>
-       
-
         <input class="submit" id="submit" type="submit" value="Submit">
     </form>
 </body>
