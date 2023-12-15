@@ -1,45 +1,60 @@
 :root {
     --duo-tone: linear-gradient(360deg, rgba(8,3,102,1) 0%, rgb(218, 9, 155) 100%);
+    --blue-color: rgb(8, 3, 102);
     --roboto-font: 'Roboto', sans-serif;
     --poppins-font: 'Poppins', sans-serif;
 }
-
 body {
     background-color: #858AE3;
-    color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
     background-image: url(./assets/survey-background.png);
     background-repeat: no-repeat;
     background-size: cover;
-
+    padding-top: 1.5rem;
+    font-family: var(--poppins-font);
+    color: #FFFFFF;
+    text-align: start;
 }
 h1 {
     margin-bottom: 0rem;
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
-p {
-    text-align: center;
-    margin-bottom: 1rem;
+.subtitle {
     margin-top: 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 300;
+    opacity: 0.9;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;  
 }
 form {
-    width: 800px;
-    height: fit-content;
-    padding: 30px;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    background-color: #603dc1b2;
+    background-color: #603dc18f;
+    max-width: 800px;
+    height: fit-content;
+    padding: 50px;
+    padding-bottom: 5rem;
+    border-radius: 10px;
     margin: auto;
-    font-size: 1.3rem;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-family: var(--roboto-font); 
 }
 .form-control {
     display: block;
     height: 2rem;
-    padding: 0.2rem 0.5rem;
+    margin: 0.5rem 0rem;
+    margin-bottom: 2rem;
+    height: 2.3rem;
+    padding: 0.3rem 0.7rem;
+    
     color: #5e6b78;
     background-color: #fffffff6;
     background-clip: padding-box;
@@ -47,13 +62,15 @@ form {
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     font-size: 1.1rem;
-    margin: 1rem 0rem;
     font-family: inherit;
 }
 select {
  width: 100%;   
 }
-
+label {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
 input[type="submit"] {
     display: block;
     height: 60px;
@@ -62,37 +79,36 @@ input[type="submit"] {
     width: 100%;
     margin-top: 2rem;
     font-size: 1.3rem;
-    background-color: rgb(8, 3, 102);
-    border: 5px rgb(8, 3, 102) solid;
-    background-position: left;
+    background-color: var(--blue-color);
+    border: 0px;
     border-radius: 30px;
     color: #FFFFFF;
     letter-spacing: 3px;
     font-weight: 600; 
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: var(--poppins-font);
 }
 input[type="submit"]:hover {
     color: white;
-    background: rgb(8,3,102);
-    background: linear-gradient(360deg, rgba(8,3,102,1) 0%, rgb(218, 9, 155) 100%);
-    border: 5px var(--duo-tone) solid;
+    background: var(--blue-color);
+    background: var(--duo-tone);
 }
 input[type="radio"] {
-    height: 1.5rem;
     width: fit-content;
-    color:red;
+}
+input[type="checkbox"], input[type="radio"] {
+    transform: scale(2);
 }
 input[type=radio] {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
+    display: inline-block; 
 }
 textarea {
     font-size: 20px;
     width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    font-family: var(--roboto-font);
 }
-.textarea-container {
+.textarea-section {
     margin-top: 2rem;
     font-family: var(--roboto-font);
 }
