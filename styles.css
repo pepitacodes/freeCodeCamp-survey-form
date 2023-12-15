@@ -34,6 +34,12 @@ p {
     margin-bottom: 1rem;
     font-size: 1.6rem;  
 }
+br {
+    height: 1rem;
+}
+label, input[type="radio"], input[type="checkbox"] {
+    margin-bottom: 1rem;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -46,6 +52,9 @@ form {
     margin: auto;
     font-size: 1.4rem;
     font-family: var(--roboto-font); 
+}
+.form-control > label {
+    margin-bottom: 1rem;
 }
 .form-control {
     display: block;
