@@ -20,7 +20,7 @@
             <label id="email-label" for="email">Email:</label>
             <input id="email" class="form-control" type="email" name="email" placeholder="Your email" required>
             <label id="number-label" for="number">Number:</label>
-            <input id="number" class="form-control" type="number" name="number" min="5" max="20" placeholder="Phone number" required>
+            <input id="number" class="form-control" type="tel" name="number" min="5" max="20" placeholder="Phone number" required>
         <div class="job-section">
             <p>Are you currently working in the IT industry?</p>
             <input type="radio" id="yes" name="job-situation" value="Yes" checked>
@@ -32,20 +32,23 @@
             <br>
         </div>    
         <div class="role-section">
-            <p>What is your current role in technology?</p>
+            <p>What role suits you best in technology?</p>
             <select class="form-control" name="dropdown" id="dropdown" placeholder="Select current role">
                 <option disable selected value>Select your current role</option>
-                <option>QA</option>
+                <option>QA Assurance</option>
                 <option>App Developer</option>
                 <option>Web Developer</option>
-                <option>UI Designer</option>
+                <option>UI Developer</option>
+                <option>UX Designer</option>
+                <option>Graphic Designer</option>
+                <option>Backend Developer</option>
                 <option>Game Developer</option>
+                <option>Cloud Developer</option>
             </select>  
         </div>
         <div class="language-section">
             <p>Which programming languages have you learned?</p>
-            <br>
-            <div>   
+            <br>  
                 <input type="checkbox" value="java" id="java" name="java">
                 <label for="java">&nbsp;Java</label><br>
                 <input type="checkbox" value="c-sharp" id="c-sharp" name="c-sharp">   
@@ -58,7 +61,6 @@
                 <label for="ruby">&nbsp;Ruby</label><br>
                 <input type="checkbox" value="python" id="python" name="python">
                 <label for="python">&nbsp;Python</label><br>
-            </div> 
         </div>
         <div class="textarea-sectionr">
             <p>Any adittional comments</p>

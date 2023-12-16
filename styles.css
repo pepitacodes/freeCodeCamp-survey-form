@@ -37,7 +37,7 @@ p {
 br {
     height: 1rem;
 }
-label, input[type="radio"], input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
     margin-bottom: 1rem;
 }
 form {
@@ -53,9 +53,7 @@ form {
     font-size: 1.4rem;
     font-family: var(--roboto-font); 
 }
-.form-control > label {
-    margin-bottom: 1rem;
-}
+
 .form-control {
     display: block;
     height: 2rem;
@@ -63,7 +61,6 @@ form {
     margin-bottom: 2rem;
     height: 2.3rem;
     padding: 0.3rem 0.7rem;
-    
     color: #5e6b78;
     background-color: #fffffff6;
     background-clip: padding-box;
@@ -114,10 +111,12 @@ textarea {
     font-size: 20px;
     width: 100%;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     border-radius: 5px;
     font-family: var(--roboto-font);
 }
 .textarea-section {
     margin-top: 2rem;
+    margin
     font-family: var(--roboto-font);
 }
