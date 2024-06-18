@@ -108,13 +108,15 @@ input[type="submit"] {
     letter-spacing: 3px;
     font-weight: 600; 
     font-family: var(--poppins-font);
+    transition: transform 0.8s ease;
 }
-
 input[type="submit"]:hover {
-    color: white;
+    color: var(--blue-color);
     background: var(--duo-tone);
+    letter-spacing: 5px;
+    transition: transform 0.8s ease;
+    transform: scale(1.05);
 }
-
 input[type="radio"] {
     width: fit-content;
 }
@@ -135,4 +137,22 @@ textarea {
 .textarea-section {
     margin-top: 2rem;
     font-family: var(--roboto-font);
+}
+
+@media (max-width: 800px) {
+    form {
+        padding: 25px;
+        margin: 5%;
+    }
+
+    .form-control {
+        font-size: 1rem;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: smooth;
+    }
 }

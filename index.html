@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="#">
     <title>Survey Form</title>
 </head>
 <body>
@@ -17,13 +18,14 @@
     <form id="survey-form">
             <label id="name-label" for="name">Name:</label>
             <input id="name" class="form-control" type="text" name="name" placeholder="Your name" required>
-            <label id="number-label" for="number">Age:</label>
-            <input id="number" class="form-control" type="number" name="number" min="18" max="100" placeholder="Ingresa una edad entre 10 y 20" required>
+            <label id="age-label" for="number">Age:</label>
+            <input id="age" class="form-control" type="number" name="number" min="18" max="100" placeholder="Ingresa una edad entre 10 y 20" required>
             <label id="email-label" for="email">Email:</label>
             <input id="email" class="form-control" type="email" name="email" placeholder="Your email" required>
-            <label id="number-label" for="number">Phone Number:</label>
-            <input id="number" class="form-control" type="number" name="number" pattern="(###) ###-####" placeholder="Phone number" required>
-        <div class="job-section">
+            <label id="phone-number-label" for="number">Phone Number:</label>
+            <input id="phone-number" class="form-control" type="number" name="number" pattern="(###) ###-####" placeholder="Phone number" required>
+        </fieldset>
+            <div class="job-section">
             <p>Are you currently working in the IT industry?</p>
             <input type="radio" id="yes" name="job-situation" value="Yes" checked>
             <label id="yes-label" for="yes">&nbsp;Yes</label><br>
@@ -41,15 +43,13 @@
                 <option>App Developer</option>
                 <option>Web Developer</option>
                 <option>UI Developer</option>
-                <option>UX Designer</option>
-                <option>Graphic Designer</option>
                 <option>Backend Developer</option>
                 <option>Game Developer</option>
                 <option>Cloud Developer</option>
             </select>  
         </div>
         <div class="language-section">
-            <p>Which programming languages have you learned?</p>
+            <p>Which technologies have you learned?</p>
             <br>  
                 <input type="checkbox" value="java" id="java" name="java">
                 <label for="java">&nbsp;Java</label><br>
@@ -64,7 +64,7 @@
                 <input type="checkbox" value="python" id="python" name="python">
                 <label for="python">&nbsp;Python</label><br>
         </div>
-        <div class="textarea-sectionr">
+        <div class="textarea-section">
             <p>Any adittional comments</p>
             <textarea id="comments" name="comment" rows="6" cols="100" placeholder="Enter your comment here..."></textarea>
         </div>
