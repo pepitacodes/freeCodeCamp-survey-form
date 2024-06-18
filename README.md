@@ -22,7 +22,8 @@ This project is part of the Responsive Web Design Certification offered by freeC
 
 ## Installation
 
-1. **Clone the Repository**:
-   -Use git clone https://your-repository.git
-   -Open the project folder.
-   -Open index.html in your preferred web browser.
+**Clone the Repository**:
+
+   - Use `git clone` [https://github.com/pepitacodes/freeCodeCamp-survey-form.git](https://github.com/pepitacodes/freeCodeCamp-survey-form.git)  
+   - Open the project folder.  
+   - Open `index.html` in your preferred web browser.
