@@ -19,3 +19,10 @@ This project is part of the Responsive Web Design Certification offered by freeC
 
 - HTML5
 - CSS3
+
+## Installation
+
+1. **Clone the Repository**:
+   -Use git clone https://your-repository.git
+   -Open the project folder.
+   -Open index.html in your preferred web browser.
