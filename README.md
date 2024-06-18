@@ -27,3 +27,8 @@ This project is part of the Responsive Web Design Certification offered by freeC
    - Use `git clone` [https://github.com/pepitacodes/freeCodeCamp-survey-form.git](https://github.com/pepitacodes/freeCodeCamp-survey-form.git)  
    - Open the project folder.  
    - Open `index.html` in your preferred web browser.
+
+## Deployment
+
+- Visit the [deployed version](https://pepitacodes.github.io/freeCodeCamp-survey-form/) to see the survey form in action.
+
