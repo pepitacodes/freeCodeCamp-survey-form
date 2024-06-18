@@ -48,11 +48,24 @@ p {
 br {
     height: 1rem;
 }
+fieldset {
+    border: none;
+}
+
+fieldset input  {
+    font-size: inherit; 
+    width: 100%; 
+  }
+  fieldset input[type="checkbox"] {
+    margin-right: 5px; 
+    vertical-align: middle; /
+  }
 
 input[type="radio"], input[type="checkbox"] {
     margin-bottom: 1rem;
     border: none;
 }
+
 
 form {
     display: flex;
