@@ -4,45 +4,56 @@
     --roboto-font: 'Roboto', sans-serif;
     --poppins-font: 'Poppins', sans-serif;
 }
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 body {
     background-color: #858AE3;
     background-image: url(./assets/survey-background_compressed.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 2rem;
     padding-top: 1.5rem;
     font-family: var(--poppins-font);
     color: #FFFFFF;
     text-align: start;
 }
+
 h1 {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
+
 .subtitle {
     margin-top: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 100;
     opacity: 0.9;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
     text-align: center;
 }
 
 p {
     margin-bottom: 1rem;
-    font-size: 1.6rem;  
+    font-size: 1.1rem;  
 }
+
 br {
     height: 1rem;
 }
+
 input[type="radio"], input[type="checkbox"] {
     margin-bottom: 1rem;
+    border: none;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -50,17 +61,17 @@ form {
     max-width: 800px;
     height: fit-content;
     padding: 50px;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     border-radius: 10px;
     margin: auto;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-family: var(--roboto-font); 
+    margin-bottom: 10rem;
 }
 
 .form-control {
     display: block;
-    height: 2rem;
-    margin: 0.5rem 0rem;
+    margin: 0.5rem 0;
     margin-bottom: 2rem;
     height: 2.3rem;
     padding: 0.3rem 0.7rem;
@@ -73,13 +84,15 @@ form {
     font-size: 1.1rem;
     font-family: inherit;
 }
+
 select {
- width: 100%;   
+    width: 100%;   
 }
+
 label {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.2rem;
 }
+
 input[type="submit"] {
     display: block;
     height: 60px;
@@ -89,27 +102,27 @@ input[type="submit"] {
     margin-top: 2rem;
     font-size: 1.3rem;
     background-color: var(--blue-color);
-    border: 0px;
+    border: 0;
     border-radius: 30px;
     color: #FFFFFF;
     letter-spacing: 3px;
     font-weight: 600; 
     font-family: var(--poppins-font);
 }
+
 input[type="submit"]:hover {
     color: white;
-    background: var(--blue-color);
     background: var(--duo-tone);
 }
+
 input[type="radio"] {
     width: fit-content;
 }
+
 input[type="checkbox"], input[type="radio"] {
     transform: scale(2);
 }
-input[type=radio] {
-    display: inline-block; 
-}
+
 textarea {
     font-size: 20px;
     width: 100%;
@@ -118,6 +131,7 @@ textarea {
     border-radius: 5px;
     font-family: var(--roboto-font);
 }
+
 .textarea-section {
     margin-top: 2rem;
     font-family: var(--roboto-font);
