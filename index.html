@@ -16,15 +16,18 @@
         <p id="description" class="subtitle">Please answer the following survey and we will contact you soon. Thank you!</p>
     </header>
     <form id="survey-form">
-            <label id="name-label" for="name">Name:</label>
-            <input id="name" class="form-control" type="text" name="name" placeholder="Your name" required>
-            <label id="age-label" for="number">Age:</label>
-            <input id="age" class="form-control" type="number" name="number" min="18" max="100" placeholder="Ingresa una edad entre 10 y 20" required>
-            <label id="email-label" for="email">Email:</label>
-            <input id="email" class="form-control" type="email" name="email" placeholder="Your email" required>
-            <label id="phone-number-label" for="number">Phone Number:</label>
-            <input id="phone-number" class="form-control" type="number" name="number" pattern="(###) ###-####" placeholder="Phone number" required>
-        </fieldset>
+          <form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" class="form-control" type="text" name="name" placeholder="Your name" required autocomplete="name">
+    
+    <label id="age-label" for="age">Age:</label>
+    <input id="age" class="form-control" type="number" name="age" min="18" max="100" placeholder="Enter your age" required autocomplete="age">
+    
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" class="form-control" type="email" name="email" placeholder="Your email" required autocomplete="email">
+    
+    <label id="phone-number-label" for="phone-number">Phone Number:</label>
+    <input id="phone-number" class="form-control" type="tel" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number" required autocomplete="tel">
             <div class="job-section">
             <p>Are you currently working in the IT industry?</p>
             <input type="radio" id="yes" name="job-situation" value="Yes" checked>
