@@ -29,7 +29,14 @@ h1 {
     font-size: 2rem;
     font-weight: 500;
 }
-
+h3 {
+    margin-bottom: 1rem;
+    font-family: monospace;
+    color: #ece6ef;
+}
+.survey-form > label {
+    color: #ece6ef;
+}
 .subtitle {
     margin-top: 0.5rem;
     font-size: 1rem;
@@ -42,30 +49,24 @@ h1 {
 
 p {
     margin-bottom: 1rem;
-    font-size: 1.3rem;  
+    font-size: 1rem;  
 }
 
 br {
     height: 1rem;
 }
+
 fieldset {
     border: none;
+    margin-bottom: 20px; /* Espacio entre fieldsets */
 }
 
-fieldset input  {
-    font-size: inherit; 
-    width: 100%; 
-  }
-  fieldset input[type="checkbox"] {
-    margin-right: 5px; 
-    vertical-align: middle; /
-  }
-
-input[type="radio"], input[type="checkbox"] {
-    margin-bottom: 1rem;
-    border: none;
+fieldset input[type="checkbox"],
+fieldset input[type="radio"] {
+    transform: none; /* Elimina la escala excesiva */
+    margin-right: 5px; /* Espacio entre el input y el texto */
+    vertical-align: middle; /* Alineación vertical */
 }
-
 
 form {
     display: flex;
@@ -79,23 +80,24 @@ form {
     margin: auto;
     font-size: 1rem;
     font-family: var(--roboto-font); 
+    font-weight: 400;
     margin-bottom: 10rem;
 }
 
 .form-control {
     display: block;
+    width: 100%;
     margin: 0.5rem 0;
     margin-bottom: 2rem;
     height: 2.3rem;
     padding: 0.3rem 0.7rem;
-    color: #5e6b78;
-    background-color: #fffffff6;
+    color: #9da3a9;
+    background-color: #eee8e8f6;
     background-clip: padding-box;
-    border: 1px solid #ced4daf6;
+    border: 1px solid #eceef1b1;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     font-size: 1.1rem;
-    font-family: inherit;
 }
 
 select {
@@ -104,6 +106,8 @@ select {
 
 label {
     font-size: 1.2rem;
+    display: block; /* Asegura que cada label sea un bloque */
+    margin-bottom: 10px; /* Espacio entre líneas */
 }
 
 input[type="submit"] {
@@ -123,26 +127,22 @@ input[type="submit"] {
     font-family: var(--poppins-font);
     transition: transform 0.8s ease;
 }
+
 input[type="submit"]:hover {
-    color: var(--blue-color);
     background: var(--duo-tone);
     letter-spacing: 5px;
     transition: transform 0.8s ease;
     transform: scale(1.05);
 }
+
 input[type="radio"] {
     width: fit-content;
-}
-
-input[type="checkbox"], input[type="radio"] {
-    transform: scale(2);
 }
 
 textarea {
     font-size: 20px;
     width: 100%;
     margin-bottom: 2rem;
-    margin-top: 2rem;
     border-radius: 5px;
     font-family: var(--roboto-font);
 }
@@ -162,7 +162,6 @@ textarea {
         font-size: 1rem;
     }
 }
-
 
 @media (prefers-reduced-motion: reduce) {
     html {

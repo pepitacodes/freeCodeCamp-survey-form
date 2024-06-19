@@ -16,63 +16,80 @@
         <p id="description" class="subtitle">Please answer the following survey and we will contact you soon. Thank you!</p>
     </header>
     <form id="survey-form">
-            <label id="name-label" for="name">Name:</label>git 
-            <input id="name" class="form-control" type="text" name="name" placeholder="Your name" required>
-            <label id="age-label" for="number">Age:</label>
-            <input id="age" class="form-control" type="number" name="number" min="18" max="100" placeholder="Ingresa una edad entre 10 y 20" required>
-            <label id="email-label" for="email">Email:</label>
-            <input id="email" class="form-control" type="email" name="email" placeholder="Your email" required>
-            <label id="phone-number-label" for="number">Phone Number:</label>
-            <input id="phone-number" class="form-control" type="number" name="number" pattern="(###) ###-####" placeholder="Phone number" required>
+        <fieldset>
+            <label id="name-label" for="name">Name:
+                <input id="name" class="form-control" type="text" name="name" placeholder="Your name" autocomplete="name" required>
+            </label>
+            <label id="age-label" for="age">Age:
+                <input id="age" class="form-control" type="number" name="age" min="18" max="100" placeholder="Enter your age" autocomplete="age" required>
+            </label>            
+            <label id="email-label" for="email">Email:
+                <input id="email" class="form-control" type="email" name="email" placeholder="Your email" autocomplete="email" required>
+            </label>
+            <label id="phone-number-label" for="phone-number">Phone Number:
+                <input id="phone-number" class="form-control" type="tel" name="phone-number" placeholder="Enter your phone number" autocomplete="tel" required>
+            </label>            
         </fieldset>
             <div class="job-section">
                 <fieldset>
-            <p>Are you currently working in the IT industry?</p>
-            <input type="radio" id="yes" name="job-situation" value="Yes" checked>
-            <label id="yes-label" for="yes">&nbsp;Yes</label><br>
-            <input type="radio" id="no" name="job-situation" value="No">
-            <label id="no-label" for="no"> &nbsp;No</label><br>
-            <input type="radio" id="occasionally" name="job-situation" value="Occasionally">
-            <label id="occasionally-label " for="occasionally">&nbsp;Occasionally</label><br>
-        </fieldset>
-            <br>
+                    <h3>Are you currently working in the IT industry?</h3>
+                    
+                    <label id="yes-label" for="yes">
+                        <input type="radio" id="yes" name="job-situation" value="Yes" checked>Yes
+                    </label>
+                    <label id="no-label" for="no">
+                        <input type="radio" id="no" name="job-situation" value="No">No
+                    </label>
+                    <label id="occasionally-label" for="occasionally">
+                        <input type="radio" id="occasionally" name="job-situation" value="Occasionally">Occasionally
+                    </label>
+                </fieldset>
         </div>    
         <div class="role-section">
-            <p>What role suits you best in technology?</p>
-            <select class="form-control" name="dropdown" id="dropdown" placeholder="Select current role">
-                <option disable selected value>Select your current role</option>
-                <option>QA Assurance</option>
-                <option>App Developer</option>
-                <option>Web Developer</option>
-                <option>UI Developer</option>
-                <option>Backend Developer</option>
-                <option>Game Developer</option>
-                <option>Cloud Developer</option>
-            </select>  
+            <fieldset>
+                <h3>What role suits you best in technology?</h3>
+                <select class="form-control" name="dropdown" id="dropdown" placeholder="Select current role">
+                    <option disable selected value>Select your current role</option>
+                    <option>QA Assurance</option>
+                    <option>App Developer</option>
+                    <option>Web Developer</option>
+                    <option>UI Developer</option>
+                    <option>Backend Developer</option>
+                    <option>Game Developer</option>
+                    <option>Cloud Developer</option>
+                </select> 
+            </fieldset> 
         </div>
         <div class="language-section">
             <fieldset>
-            <p>Which technologies have you learned?</p>
-            <br>  
-                <input type="checkbox" value="java" id="java" name="java">
-                <label for="java">&nbsp;Java</label><br>
-                <input type="checkbox" value="c-sharp" id="c-sharp" name="c-sharp">   
-                <label for="c-sharp">&nbsp;C#</label><br>
-                <input type="checkbox" value="javascript" id="javascript" name="javascript">   
-                <label for="javascript">&nbsp;Javascript</label><br>
-                <input type="checkbox" value="go" id="go" name="go">  
-                <label for="go">&nbsp;Go</label><br>
-                <input type="checkbox" value="ruby" id="ruby" name="ruby">   
-                <label for="ruby">&nbsp;Ruby</label><br>
-                <input type="checkbox" value="python" id="python" name="python">
-                <label for="python">&nbsp;Python</label><br>
+                <h3>Which technologies have you learned?</h3>
+                <label for="java">
+                    <input type="checkbox" value="java" id="java" name="java"> Java
+                </label>
+                <label for="c-sharp">
+                    <input type="checkbox" value="c-sharp" id="c-sharp" name="c-sharp"> C#
+                </label>
+                <label for="javascript">
+                    <input type="checkbox" value="javascript" id="javascript" name="javascript"> Javascript
+                </label>
+                <label for="go">
+                    <input type="checkbox" value="go" id="go" name="go"> Go
+                </label>
+                <label for="ruby">
+                    <input type="checkbox" value="ruby" id="ruby" name="ruby"> Ruby
+                </label>
+                <label for="python">
+                    <input type="checkbox" value="python" id="python" name="python"> Python
+                </label>
             </fieldset>
-        </div>
+        </div>        
         <div class="textarea-section">
-            <p>Any adittional comments</p>
-            <textarea id="comments" name="comment" rows="6" cols="100" placeholder="Enter your comment here..."></textarea>
-        </div>
-        <input class="submit" id="submit" type="submit" value="Submit">
+            <fieldset>
+                <h3>Any adittional comments</h3>
+                <textarea id="comments" name="comment" rows="6" cols="100" placeholder="Enter your comment here..."></textarea>
+                <input class="submit" id="submit" type="submit" value="Submit">
+            </fieldset>
+        </div>    
     </form>
 </body>
 </html>
