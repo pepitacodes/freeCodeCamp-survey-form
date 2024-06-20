@@ -16,7 +16,7 @@
         <p id="description" class="subtitle">Please answer the following survey and we will contact you soon. Thank you!</p>
     </header>
     <form id="survey-form">
-        <fieldset>
+        <fieldset class="personal-info">
             <label id="name-label" for="name">Name:
                 <input id="name" class="form-control" type="text" name="name" placeholder="Your name" autocomplete="name" required>
             </label>
@@ -31,7 +31,7 @@
             </label>            
         </fieldset>
             <div class="job-section">
-                <fieldset>
+                <fieldset class="job-info">
                     <h3>Are you currently working in the IT industry?</h3>
                     
                     <label id="yes-label" for="yes">
@@ -46,7 +46,7 @@
                 </fieldset>
         </div>    
         <div class="role-section">
-            <fieldset>
+            <fieldset class="role-info">
                 <h3>What role suits you best in technology?</h3>
                 <select class="form-control" name="dropdown" id="dropdown" placeholder="Select current role">
                     <option disable selected value>Select your current role</option>
@@ -61,7 +61,7 @@
             </fieldset> 
         </div>
         <div class="language-section">
-            <fieldset>
+            <fieldset class="language-info">
                 <h3>Which technologies have you learned?</h3>
                 <label for="java">
                     <input type="checkbox" value="java" id="java" name="java"> Java
