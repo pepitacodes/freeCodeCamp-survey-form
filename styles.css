@@ -3,6 +3,7 @@
     --blue-color: rgb(8, 3, 102);
     --roboto-font: 'Roboto', sans-serif;
     --poppins-font: 'Poppins', sans-serif;
+    --form-background-color: rgb(236, 239, 244);;
 }
 * {
     box-sizing: border-box;
@@ -61,7 +62,7 @@ fieldset input[type="radio"] {
     transform: none;
     margin-right: 5px; 
     vertical-align: middle;
-    scale: 1.3;
+    scale: 1.4;
 }
 form {
     display: flex;
@@ -86,7 +87,7 @@ form {
     height: 2.3rem;
     padding: 0.3rem 0.7rem;
     color: #525559;
-    background-color: #eee8e8f6;
+    background-color: var(--form-background-color);
     background-clip: padding-box;
     border: 1px solid #eceef1b1;
     border-radius: 0.25rem;
@@ -133,9 +134,15 @@ textarea {
     font-size: 20px;
     width: 100%;
     margin-bottom: 2rem;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: var(--roboto-font);
     font-size: inherit;
+    padding: 15px;
+    background-color: var(--form-background-color);
+    color: #525559;
+}
+textarea > input {
+    color: lightslategray;
 }
 .textarea-section {
     margin-top: 2rem;
